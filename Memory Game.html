@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="Style.css">
+ <script src="script.js"></script>
+ <script>
+     
+</script>
+</head>
+<body onload="setImages()">
+<div id="titleContainer">*
+    <span><img id="brain" src='images/brain.png'>The Memory Game</span>
+</div>
+<div id="container">
+<div id="Game">
+    
+</div>
+<div id="controls">
+<select id="select" name="pairs" onchange="reset()"> 
+<option value="4">4 pair</option>
+    <option value="8">8 pair</option>
+    <option value="12">12 pair</option>
+    <option value="18">18 pair</option>
+  <option value="21">21 pair</option>
+  <option value="24">24 pair</option>
+   <option value="28">28 pair</option>
+    <option value="32">32 pair</option>
+</select>
+<p id="time">Time: 0h:0m:0s</p>
+<div id="buttons">
+ <button id="button1" class="button" type="button" onclick="start()" >Start</button>
+ <button id="button2" class="button" type="button" onclick="solve()" style="cursor:not-allowed" disabled>Solve</button>
+</div>
+</div>
+
+</body>
+</html>
